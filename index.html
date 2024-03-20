@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Fitness Tracker</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Personal Fitness Tracker</h1>
+    </header>
+    <section class="workout-summary">
+      <h2>Daily Workout Summary</h2>
+      </section>
+    <section class="add-workout">
+      <h2>Add New Workout</h2>
+      <form id="workout-form">
+        <label for="exercise-type">Exercise Type:</label>
+        <select name="exercise-type" id="exercise-type">
+          <option value="cardio">Cardio</option>
+          <option value="strength">Strength</option>
+          <option value="yoga">Yoga</option>
+        </select>
+        <label for="exercise-name">Exercise Name:</label>
+        <input type="text" name="exercise-name" id="exercise-name" placeholder="Enter Exercise Name">
+        <label for="exercise-sets">Sets:</label>
+        <input type="number" name="exercise-sets" id="exercise-sets" min="1" placeholder="Enter Sets">
+        <label for="exercise-reps">Reps:</label>
+        <input type="number" name="exercise-reps" id="exercise-reps" min="1" placeholder="Enter Reps">
+        <button type="submit">Add Workout</button>
+      </form>
+    </section>
+    <section class="workout-logs">
+      <h2>Workout Logs</h2>
+      </section>
+  </main>
+</body>
+</html>
